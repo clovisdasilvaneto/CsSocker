@@ -1,0 +1,75 @@
+
+@-webkit-keyframes bonecoStageOne {
+    0% {
+        -webkit-transform:translateX(0)
+    }100%{
+        -webkit-transform:translateX(-200px)
+    }
+}
+
+@-moz-keyframes bonecoStageOne {
+    0% {
+        -moz-transform:translateX(0)
+    }100%{
+        -moz-transform:translateX(-200px)
+    }
+}
+@-ms-keyframes bonecoStageOne {
+    0% {
+        -ms-transform:translateX(0)
+    }100%{
+        -ms-transform:translateX(-200px)
+    }
+}
+@-o-keyframes bonecoStageOne {
+    0% {
+        -o-transform:translateX(0)
+    }100%{
+        -o-transform:translateX(-200px)
+    }
+}
+
+@keyframes bonecoStageOne {
+    0% {
+        transform:translateX(0)
+    }100%{
+        transform:translateX(-200px)
+    }
+}
+
+@-webkit-keyframes bonecoGloves {
+    0% {
+        -webkit-transform:translate(0);
+    }
+    100% {
+        -webkit-transform:translateY(-6px);
+    }
+}@-moz-keyframes bonecoGloves {
+    0% {
+        -moz-transform:translate(0);
+    }
+    100% {
+        -moz-transform:translateY(-6px);
+    }
+}@-ms-keyframes bonecoGloves {
+    0% {
+        -ms-transform:translate(0);
+    }
+    100% {
+        -ms-transform:translateY(-6px);
+    }
+}@-o-keyframes bonecoGloves {
+    0% {
+        -o-transform:translate(0);
+    }
+    100% {
+        -o-transform:translateY(-6px);
+    }
+}@keyframes bonecoGloves {
+    0% {
+        transform:translate(0);
+    }
+    100% {
+        transform:translateY(-6px);
+    }
+}

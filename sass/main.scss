@@ -1,0 +1,46 @@
+@font-face {
+	font-family:'ARCENA-Regular';
+	src: url('../fonts/ARCENA_gdi.eot');
+	src: url('../fonts/ARCENA_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ARCENA_gdi.woff') format('woff'),
+		url('../fonts/ARCENA_gdi.ttf') format('truetype'),
+		url('../fonts/ARCENA_gdi.otf') format('opentype'),
+		url('../fonts/ARCENA_gdi.svg#ARCENA-Regular') format('svg');
+	font-weight: 5;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}
+
+/*----------------- Configuration ------------------------*/
+
+@import "defaults/reset";
+@import "pre-load/pre-load";
+
+/*----------------- Components ------------------------*/
+@import "components/logo";
+@import "components/button";
+@import "components/grass";
+@import "components/plates";
+@import "components/snow";
+@import "components/house";
+@import "components/ball";
+@import "components/pentagon";
+
+/*----------------- Sections ------------------------*/
+@import "welcome/welcome";
+@import "instructions/instructions";
+@import "stage-one/stage-one";
+@import "stage-two/stage-two";
+@import "gameover/gameover";
+
+/*----------------- Animations ------------------------*/
+@import "animations/boneco/stage-one";
+@import "animations/boneco/stage-two";
+@import "animations/boneco/stage-one-success";
+@import "animations/pull";
+@import "animations/gotas";
+@import "animations/nuvens";
+@import "animations/pre-loader";
+@import "animations/pulse";
+@import "animations/field";

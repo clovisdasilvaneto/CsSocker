@@ -1,0 +1,228 @@
+@import "../defaults/functions";
+@import "../defaults/variables";
+
+#success-stage-one:checked ~ #stage-2 {
+	@include transitionDelay(5s);
+    @include activeSection();
+
+    .neymar {
+        @include animation(neymar 4s infinite linear)
+    }
+
+    .gloves {
+        @include animation(bonecoGloves 0.5s ease-in alternate infinite);
+    }
+}
+#success-stage-one:checked ~ #stage-1 {
+    @include prevSection();
+
+    .ball {
+        @include transform(translateX(-510px) translateY(-100px) scale(0.1));
+    }
+
+    label[for="success-stage-one"] {
+        @include animation(pull ease 1s infinite alternate);
+
+        .gloves{
+	    	@include animation(bonecoGlovesSuccess 0.4s ease alternate infinite);
+	    }
+    }
+
+    .goal {
+		text-shadow: 0 0 1px #fff;
+		@include transform(scale(1) translateY(130px));
+		opacity:1;
+		visibility:visible;
+    }
+
+    .fail {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#stage-2 {
+    text-align:center;
+    background: #00dfff;
+
+
+
+    .lvl {
+        font-size: 48px;
+    }
+
+    .snow {
+        @include transform(translateY(-41px));
+
+        &:before {
+            @include transform(scale(1.3));
+            left: -30px;
+        }
+    }
+
+    .plates {
+        z-index: 4;
+        width: 70%;
+        background: #499df5;
+        top: 200px;
+        box-shadow: 0 43px 0 #008102, 0 45px 0 #fff;
+
+        &:nth-of-type(2) {
+            z-index: 3;
+            @include transform(rotateZ(14deg));
+            width: 32%;
+            right: -53px;
+            top: 237px;
+            box-shadow: inset 0 -2px 0 #008102,0 39px 0 #008102, 0 41px 0 #fff;
+            background: #028ff8;
+        }
+    }
+
+    .field {
+        background: #008102;
+        width: 100%;
+        height: 20em;
+        right: -110px;
+        position: absolute;
+        z-index: 2;
+        bottom: -69px;
+        @include transform(skewX(47deg));
+        @extend %cf;
+
+        &:before {
+            width: 0;
+            height: 0;
+            border: solid 60px transparent;
+            border-bottom: solid 199px #008102;
+            border-right-width: 3px;
+            border-left-width: 274px;
+            position: absolute;
+            left: -274px;
+            bottom: 67px;
+        }
+    }
+
+    .bar {
+        @include transform(rotate(0));
+        top: 17em;
+        left: 220px;
+
+        span {
+            left:0;
+        }
+    }
+
+    .cone {
+        width: 19px;
+        height: 0;
+        border: solid 18px transparent;
+        border-bottom: solid 58px;
+        position: absolute;
+        z-index: 36;
+        top: 380px;
+        left: 160px;
+        color: #FFAF1D;
+
+        &:before {
+            content: "";
+            width: 25px;
+            border: solid 7px transparent;
+            border-bottom: solid 12px #fff;
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            border-left-width: 4px;
+            border-right-width: 4px;
+        }
+
+        &:after {
+            content: "";
+            width: 39px;
+            border: solid 7px transparent;
+            border-bottom: solid 12px #fff;
+            position: absolute;
+            left: -14px;
+            top: 27px;
+            border-left-width: 4px;
+            border-right-width: 4px;
+        }
+
+        &:nth-of-type(2) {
+            left:270px;
+        }
+
+        &:nth-of-type(3) {
+            left:380px;
+        }
+
+        &:nth-of-type(4) {
+            left:490px;
+        }
+    }
+
+    label.neymar {
+        bottom: 140px;
+        position: absolute;
+        z-index: 34;
+        left: 60px;
+
+        * {
+            position:absolute;
+        }
+
+        .gloves {
+            right:-17px
+        }
+
+        .eyes {
+            @extend %cf;
+
+            &:before {
+                left:4px;
+            }
+        }
+
+        .body {
+            background: #FFF701;
+
+            div {
+                box-shadow:9px 0 0 #FFF701,18px 0 0 #FFF701;
+                background: #FFF701;
+            }
+        }
+
+        .short {
+            box-shadow: inset 0px 2px 0 #028FF8, inset 0px 4px 0 #fff, inset -2px 0px 0 #028FF8, inset 25px 0px 0 #028FF8, inset 71px 638px 0 #fff;
+            background: #028FF8;
+            @extend %cf;
+
+            &:before {
+                width: 17px;
+                height: 10px;
+                background: #FFF701;
+                border-radius: 100%;
+                top: 9px;
+                left: -2px;
+                box-shadow: 19px 0 #FFF701;
+            }
+        }
+
+        .gloves {
+            background: #FFF701;
+        }
+    }
+
+    .ball {
+        @include transform(scale(0.5));
+        left: 616px;
+        bottom: 40px;
+    }
+
+    .fail-stage-two {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 33;
+        left: 0
+    }
+}

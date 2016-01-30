@@ -1,0 +1,45 @@
+.big-grass {
+    position: absolute;
+    height: 480px;
+    width: 510px;
+    @include transform(rotateZ(-58deg));
+    border-radius: 0 219px 56px 0 / 0 50% 50% 0;
+}
+
+.big-grass, .grass {
+    border: solid 4px #14981F;
+    box-shadow: inset 0 0 2px 2px #14981F;
+    background:$green-bg;
+}
+
+.small-grass {
+    width: 0;
+    height: 0;
+    z-index:8;
+    border: solid 4px transparent;
+    border-bottom: solid 11px rgba(20, 152, 31, 0.9);
+    position: absolute;
+
+    @extend %cf;
+
+    &:before {
+        @include transform(rotateZ(30deg));
+        top: -4px;
+        right: -10px;
+
+    }
+
+    &:after {
+        @include transform(rotateZ(-30deg));
+        top: -4px;
+        left: -9px;
+    }
+
+    &:before, &:after {
+        z-index:8;
+        width: 0;
+        height: 0;
+        border: solid 4px transparent;
+        border-bottom: solid 11px rgba(20, 152, 31, 0.9);
+    }
+}

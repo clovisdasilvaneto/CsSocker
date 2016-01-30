@@ -1,0 +1,59 @@
+@mixin transform($property){
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+@mixin transition($property){
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -o-transition: $property;
+    -ms-transition: $property;
+    transition: $property;
+}
+@mixin transitionDelay($property){
+    -webkit-transition-delay: $property;
+    -moz-transition-delay: $property;
+    -o-transition-delay: $property;
+    -ms-transition-delay: $property;
+    transition-delay: $property;
+}
+@mixin animation($property){
+    -webkit-animation: $property;
+    -moz-animation: $property;
+    -o-animation: $property;
+    -ms-animation: $property;
+    animation: $property;
+}
+@mixin animationDelay($property){
+    -webkit-animation-delay: $property;
+    -moz-animation-delay: $property;
+    -o-animation-delay: $property;
+    -ms-animation-delay: $property;
+    animation-delay: $property;
+}
+@mixin getSnow($color){
+    box-shadow:26px -21px 0 $color, 76px -60px 0 $color,26px -21px 0 $color, 76px -20px 0 $color, 87px -60px 0 $color, 117px -29px 0 $color, 164px -10px 0 $color, 214px 9px 0 $color, 224px 9px 0 $color, 242px 9px 0 $color, 262px -31px 0 $color, 280px -38px 0 $color, 280px -18px 0 $color, 330px -27px 0 $color, 380px -57px 0 $color, 430px -47px 0 $color, 390px -27px 0 $color, 440px -27px 0 $color, 430px -57px 0 $color, 469px -24px 0 $color, 521px -50px 0 $color, 531px -20px 0 $color, 566px -50px 0 $color, 598px -51px 0 $color, 618px -51px 0 $color, 638px -51px 0 $color, 668px -71px 0 $color, 588px -31px 0 $color, 638px -31px 0 $color, 618px -71px 0 $color, 691px -71px 0 $color, 721px -71px 0 $color, 751px -71px 0 $color, 681px -31px 0 $color, 731px -31px 0 $color, 781px -31px 0 $color, 831px -31px 0 $color, 861px -31px 0 $color, 711px -101px 0 $color;
+}
+@mixin animation-delay($property){
+    -webkit-animation-delay: $property;
+    -moz-animation-delay: $property;
+    -o-animation-delay: $property;
+    -ms-animation-delay: $property;
+    animation-delay: $property;
+}
+@mixin box-sizing($property){
+    -webkit-box-sizing: $property;
+    -moz-box-sizing: $property;
+    -o-box-sizing: $property;
+    -ms-box-sizing: $property;
+    box-sizing: $property;
+}
+@mixin activeSection(){
+    z-index:9999;
+}
+@mixin prevSection(){
+    z-index:9998;
+}
+

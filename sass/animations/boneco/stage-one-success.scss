@@ -1,0 +1,36 @@
+@-webkit-keyframes bonecoGlovesSuccess {
+    0% {
+        -webkit-transform:rotateZ(202deg);
+    }
+    100% {
+        -webkit-transform:rotateZ(202deg) translateY(6px);
+    }
+}@-moz-keyframes bonecoGlovesSuccess {
+    0% {
+        -moz-transform:rotateZ(202deg);
+    }
+    100% {
+        -moz-transform:rotateZ(202deg) translateY(6px);
+    }
+}@-ms-keyframes bonecoGlovesSuccess {
+    0% {
+        -ms-transform:rotateZ(202deg);
+    }
+    100% {
+        -ms-transform:rotateZ(202deg) translateY(6px);
+    }
+}@-o-keyframes bonecoGlovesSuccess {
+    0% {
+        -o-transform:rotateZ(202deg);
+    }
+    100% {
+        -o-transform:rotateZ(202deg) translateY(6px);
+    }
+}@keyframes bonecoGlovesSuccess {
+    0% {
+        transform:rotateZ(202deg);
+    }
+    100% {
+        transform:rotateZ(202deg) translateY(6px);
+    }
+}

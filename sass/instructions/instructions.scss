@@ -1,0 +1,43 @@
+@import "../defaults/functions";
+@import "../defaults/variables";
+
+#play:checked ~ #instructions {
+    @include activeSection();
+}
+
+#instructions {
+    background: $sky;
+    @extend %cf;
+	text-align: center;
+
+    h1 {
+	    font-size: 87px;
+	    margin-top: 10px;
+    }
+
+	.btn {
+	    font-size: 52px;
+	    padding: 5px 22px;
+	    margin: -30px auto 0;
+	}
+
+}
+
+.dialog {
+    background: #00CAE6;
+    width: 60%;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+    padding:10px 20px;
+
+    h2 {
+	    margin: 0;
+	    font-size: 36px;
+	    color: #E8F537;
+    }
+
+    p {
+    	text-align:left;
+    	margin-bottom: 30px;
+    }
+}

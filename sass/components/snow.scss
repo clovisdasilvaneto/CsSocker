@@ -1,0 +1,48 @@
+.snow{
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        
+        @extend %cf;
+
+        &.light {
+            background: $blue-light;
+            bottom: 120px;
+            z-index: 2;
+
+            &:before {
+                background: $blue-light;
+                @include getSnow($blue-light);
+            }
+        }
+
+        &.dark {
+            background: $blue-dark;
+            bottom: 155px;
+            z-index: 1;
+            
+            &:before {
+                background: $blue-dark;
+                @include getSnow($blue-dark);
+            }
+        }
+
+        &.stroke {
+            background: #1be2f5;
+            bottom: 122px;
+            z-index: 1;
+            
+            &:before {
+                background: #1be2f5;
+                @include getSnow(#1be2f5);
+            }
+        }
+
+        &:before {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            border-radius: 100%;
+            top: -41px;
+        }
+    }
