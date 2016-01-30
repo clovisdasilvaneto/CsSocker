@@ -1,0 +1,101 @@
+.pentagon {
+    width: 18px;
+    height: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-top: solid 14px #fff;
+    position: absolute;
+
+    @extend %cf;
+
+    &:before {
+        width: 18px;
+        height: 0;
+        border-left: solid 5px transparent;
+        border-right: solid 5px transparent;
+        border-top: solid 10px #fff;
+        border-radius: 0 0 7px 8px;
+        position: absolute;
+        top: -23px;
+        left: -5px;
+        @include transform(rotateZ(180deg));
+    }
+
+    &:nth-child(1) {
+        @include transform(rotateZ(-24deg));
+        left: -12px;
+        top: 32px;
+    }
+
+    &:nth-child(2) {
+        top: 30px;
+        left: 13px;
+        @include transform(rotateZ(17deg));
+    }
+
+    &:nth-child(3) {
+        top: -3px;
+        left: -1px;
+        @include transform(rotateZ(206deg));
+    }
+
+    &:nth-child(4) {
+        top: 30px;
+        left: 13px;
+        @include transform(rotateZ(17deg));
+    }
+
+    &:nth-child(5) {
+        top: 6px;
+        left: 24px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(6) {
+        top: 29px;
+        left: 42px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(7) {
+        top: 5px;
+        left: 54px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(8) {
+        top: 29px;
+        left: 70px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(9) {
+        top: 52px;
+        left: 31px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(10) {
+        top: 52px;
+        left: 59px;
+        @include transform(rotateZ(21deg));
+    }
+
+    &:nth-child(11) {
+        top: 54px;
+        left: 4px;
+        @include transform(rotateZ(-28deg));
+    }
+
+    &:nth-child(12) {
+        top: 77px;
+        left: 19px;
+        @include transform(rotateZ(-29deg));
+    }
+
+    &:nth-child(13) {
+        top: 76px;
+        left: 47px;
+        @include transform(rotateZ(21deg));
+    }
+}

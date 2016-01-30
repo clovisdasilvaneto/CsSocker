@@ -1,0 +1,17 @@
+.ball {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    border: solid 3px #000;
+    overflow: hidden;
+    z-index: 222;
+    position: absolute;
+    border-radius: 100%;
+
+    @include transition(all ease-out 1s);
+
+    .pentagon {
+    	top: 40px;
+    	border-radius:0 0 7px 8px;
+    }
+}

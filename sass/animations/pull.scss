@@ -1,0 +1,41 @@
+
+
+@-webkit-keyframes pull {
+    0%,60% {
+        -webkit-transform:translateX(-200px) translateY(-10px);
+    }30%,100%{
+        -webkit-transform:translateX(-200px) translateY(0px);
+    }
+}
+
+@-moz-keyframes pull {
+    0%,60% {
+        -moz-transform:translateX(-200px) translateY(-10px);
+    }30%,100%{
+        -moz-transform:translateX(-200px) translateY(0px);
+    }
+}
+
+@-ms-keyframes pull {
+    0%,60% {
+        -ms-transform:translateX(-200px) translateY(-10px);
+    }30%,100%{
+        -ms-transform:translateX(-200px) translateY(0px);
+    }
+}
+
+@-o-keyframes pull {
+    0%,60% {
+        -o-transform:translateX(-200px) translateY(-10px);
+    }30%,100%{
+        -o-transform:translateX(-200px) translateY(0px);
+    }
+}
+
+@keyframes pull {
+    0%,60% {
+        transform:translateX(-200px) translateY(-10px);
+    }30%,100%{
+        transform:translateX(-200px) translateY(0px);
+    }
+}

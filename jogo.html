@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CsSocker - Game</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<input type="radio" name="stage" class="fail-one" id="fail-one">
+	<input type="radio" name="stage" class="fail-two" id="fail-two">
+	<input type="radio" name="stage" id="initial-template">
+	<input type="radio" name="stage" id="play"> 
+	<input type="radio" name="stage" id="play-game">
+	<input type="radio" name="stage" id="success-stage-one">
+	<input type="radio" name="stage" id="success-stage-two">
+	<!-- actions -->
+
+	<section id="pre-load">
+		<h1 class="logo">Loading...</h1>
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BIG BALL -->
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BIG BALL -->
+		
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BIG BALL -->
+		
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BIG BALL -->
+	</section>
+	<!-- PRE-LOAD -->
+
+	<section id="welcome-soccer">
+		<h1 class="logo">Cs-Socker <span>I <i></i> CSS</span></h1>
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BIG BALL -->
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- SMALL BALL LEFT -->
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- SMALL BALL RIGHT -->
+
+		<label for="play" class="btn">Entrar</label>
+
+		<div id="field">
+			<div class="field-int"></div>
+			<div class="field-int"></div>
+			<div class="field-int"></div>
+
+			<div class="ball-mark"></div>
+		</div>
+	</section>
+	<!-- WELCOME -->
+
+	<section id="instructions">
+		<h1 class="logo">Cs-Socker <span>I <i></i> CSS</span></h1>
+
+		<div class="dialog">
+			<h2>Introduction</h2>
+
+			<p>Clóvis é um garoto que sonha em um dia virar jogador de futebol</p>
+
+			<p>Ajude-o a se tornar um grande astro dos campos fazendo nosso herói passar de estágios.</p>
+
+			<p>Para conseguir passar um level basta clicar em cima do nosso jogador. Cuidado! Esta tarefa não será fácil.</p>
+		</div>
+
+		<label for="play-game" class="btn">Play Socker</label>
+	</section>
+
+	<section id="stage-1">
+		<h1 class="lvl">Level <span>1/2</span></h1>
+		<div class="goal">Goal!</div>
+
+		<div class="snow light"></div>
+		<div class="snow dark"></div>
+		<div class="snow stroke"></div>
+
+		<div>
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+
+
+			<!-- GRAMAS DO CAMPO -->
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+			<div class="small-grass"></div>
+		</div>
+
+
+		<!-- GRAMA VERDE DO LADO ESQUERDO (BG) -->
+		<div class="big-grass left-grass"></div>
+		<div class="big-grass right-grass"></div>
+
+
+		<!-- CASA -->
+		<div class="house">
+			<div class="window"></div>
+			<div class="window"></div>
+
+			<div class="door"></div>
+		</div>
+
+		<div class="house-shadow"></div>
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BOLA -->
+
+		<div class="bar">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- BARRA -->
+
+
+		<label for="success-stage-one">
+			<div class="hair"></div>
+			<div class="head">
+				<div class="eyes"></div>
+				<div class="eyes"></div>
+
+				<div class="lips"></div>
+			</div>
+
+			<div class="body">
+				<div></div>
+			</div>
+			
+			<span class="gloves"></span>
+
+			<div class="short"></div>
+		</label>
+		<label for="fail-one" class="fail"></label>
+		<!-- FIM DO BONECO -->
+
+		<!-- CERCAS -->
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+		<p class="fences"></p>
+	</section>
+	<!-- FIM DO PRIMEIRO ESTÁGIO -->
+
+	<section id="stage-2">
+		<label for="fail-one"></label>
+		<h1 class="lvl">Level <span>2/2</span></h1>
+
+		<p class="plates">Play game pure CSS3</p>
+		<p class="plates">CsSocker ;)</p>
+
+		<div class="snow light"></div>
+		<div class="snow dark"></div>
+		<div class="snow stroke"></div>
+
+		<div class="bar">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="field"></div>
+
+		<label class="fail-stage-two" for="fail-two"></label>
+		<label class="neymar">
+			<div class="hair"></div>
+
+			<div class="head">
+				<div class="eyes"></div>
+				<div class="eyes"></div>
+				<div class="lips"></div>
+			</div>
+
+			<div class="body">
+				<div></div>
+			</div>
+			
+			<span class="gloves"></span>
+
+			<div class="short"></div>
+		</label>
+	
+		<div>
+			<div class="cone"></div>
+			<div class="cone"></div>
+			<div class="cone"></div>
+			<div class="cone"></div>
+		</div>
+
+
+		<div class="ball">
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+			<div class="pentagon"></div>
+		</div>
+		<!-- BOLA -->
+	</section>
+	<!-- ESTAGIO 2 -->
+
+	<section id="gameover">
+		<h1 class="logo">Game Over</h1>
+		<p>Você não conseguiu clicar em Clóvis :/</p>
+
+		<label for="initial-template" class="btn">Restart</label>
+	</section>
+	<!-- GAME OVER -->
+	
+	<div class="circles"></div>
+	<div class="circles"></div>
+	<div class="circles"></div>
+	<div class="montains"></div>
+
+	<footer>
+		<p>Front End by: <a href="http://clovisdasilvaneto.github.io" target="_blank">Clóvis Neto</a></p>
+		<p>Design by: <a href="http://clovisdasilvaneto.github.io" target="_blank">Jeftar Mascarenhas</a></p>
+	</footer>
+</body>
+</html>

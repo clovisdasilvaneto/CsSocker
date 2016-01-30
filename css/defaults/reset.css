@@ -1,0 +1,6 @@
+input {
+  opacity: 0;
+  visibility: hidden; }
+
+label[for="fail-right"] {
+  cursor: pointer; }

@@ -1,0 +1,97 @@
+@import "../defaults/functions";
+@import "../defaults/variables";
+
+#fail-one:checked ~ #stage-1 {
+    @include prevSection();
+    
+    .ball {
+        @include transform(scale(0.1) translateX(-5100px) translateY(-1820px));
+    }
+
+    .fail {
+        z-index:9999;
+    }
+
+    .eyes {
+        @include transition(all ease-out 0.3s);
+        @include transitionDelay(0.9s);
+        top:8px;
+
+        &:before {
+            @include transition(all ease-out 0.3s);
+            @include transitionDelay(0.9s);
+            top:5px
+        }
+    }
+    
+    .lips {
+        @include transitionDelay(0.9s);
+        @include transform(rotateZ(180deg) translateY(-3px));
+    }
+}
+ 
+ #fail-two:checked ~ #stage-2 {
+    @include prevSection();
+ }
+
+#fail-one:checked ~ #gameover, #fail-two:checked ~ #gameover {
+    @include activeSection();
+}
+
+#fail-one:checked ~ #gameover {
+    @include transitionDelay(3s);
+}
+
+#gameover {
+    text-align:center;
+    background: #00dfff;
+
+    p {
+        @include transform(translateY(220px))
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        font-size: 6em;
+        width: 100%;
+        margin-top: 1.2em;
+    }
+
+    label.btn {
+        font-size: 46px;
+        padding: 5px 62px;
+        margin-top: 6em;
+    }
+
+    .ball {
+        top: 17em;
+        left: 260px;
+        opacity:0;
+        visibility: 0;
+        @include transform(scale(0.5));
+        @include animation(preLoaderBallSmall 1s ease infinite alternate);
+
+        &:nth-of-type(2){
+            top: 18.5em;
+            left: 320px;
+            @include transform(scale(0.58));
+            @include animation(preLoaderBallMedium 1s ease infinite alternate);
+        }
+
+        &:nth-of-type(3){
+            top: 18.5em;
+            left: 392px;
+            @include transform(scale(0.68));
+            @include animation(preLoaderBallBig 1s ease infinite alternate);
+        }
+
+        &:nth-of-type(4){    
+            top: 17.5em;
+            left: 470px;
+            @include transform(scale(0.78));
+            @include animation(preLoaderBallBigDouble 1s ease infinite alternate);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.btn {
+    font-family: "ARCENA-Regular";
+    display:inline-block;
+    color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#D1882E+0,F6A628+100 */
+	background: #D1882E; /* Old browsers */
+	background: -moz-linear-gradient(top,  #D1882E 0%, #F6A628 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #D1882E 0%,#F6A628 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #D1882E 0%,#F6A628 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D1882E', endColorstr='#F6A628',GradientType=0 ); /* IE6-9 */
+    border-radius: 14px;
+    cursor: pointer;
+    @include animation(pulse 0.5s infinite alternate linear);
+}

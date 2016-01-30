@@ -1,0 +1,54 @@
+@import "../defaults/functions";
+@import "../defaults/variables";
+
+#pre-load {
+    background: #00dfff;
+    z-index: 3;
+    display: block;
+    line-height: 400px;
+    text-align: center;
+    opacity:0;
+    visibility: hidden;
+    box-shadow:inset 0 282px 102px #00D4F3;
+
+    @include animation(preLoader 15.5s linear 1);
+
+    .logo {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        font-size: 6em;
+        width: 100%;
+        margin-top: 0.2em;
+    }
+
+    .ball {
+        top: 17em;
+        left: 260px;
+        opacity:0;
+        visibility: 0;
+        @include transform(scale(0.5));
+        @include animation(preLoaderBallSmall 1s ease infinite alternate);
+
+        &:nth-of-type(2){
+            top: 18.5em;
+            left: 320px;
+            @include transform(scale(0.58));
+            @include animation(preLoaderBallMedium 1s ease infinite alternate);
+        }
+
+        &:nth-of-type(3){
+            top: 18.5em;
+            left: 392px;
+            @include transform(scale(0.68));
+            @include animation(preLoaderBallBig 1s ease infinite alternate);
+        }
+
+        &:nth-of-type(4){    
+            top: 17.5em;
+            left: 470px;
+            @include transform(scale(0.78));
+            @include animation(preLoaderBallBigDouble 1s ease infinite alternate);
+        }
+    }
+}

@@ -1,0 +1,186 @@
+@import "../defaults/functions";
+@import "../defaults/variables";
+
+
+#initial-template:checked ~ #welcome-soccer {
+    @include activeSection();
+    opacity:1;
+}
+
+#welcome-soccer {
+    background: $sky;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    box-shadow:inset 0 282px 102px #00D4F3;
+    @extend %cf;
+
+    h1 {
+        margin-top: 112px;
+        font-size: 118px;
+    }
+
+    label.btn {
+        font-size: 46px;
+        padding: 5px 102px;
+    }
+
+    article {
+        position: absolute;
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all ease 0.3s);
+
+        * {
+            color: #fff;
+        }
+    }
+
+    &:before {
+        width: 87%;
+        height: 54px;
+        background: #19AD1D;
+        bottom: -37px;
+        z-index: 2;
+        left: 30px;
+        @include transform(skewX(-10deg));
+    }
+
+    .ball {
+        top: 28px;
+        left: 400px;
+
+        &:nth-of-type(2), &:nth-of-type(3){
+            @include transform(scale(0.8));
+            top: 50px;
+        }
+
+        &:nth-of-type(2) {
+            left: 308px;
+        }
+
+        &:nth-of-type(3) {
+            left: 492px;
+        }
+    }
+}
+
+#field {
+    width: 100%;
+    position: absolute;
+    @extend %cf;
+    height: 200px;
+    box-shadow: inset 25px 35px 0 0px $green, inset -96px 2px 0 0px $green, inset 0 10px 0 27px #fff;
+    background: $green;
+    bottom: -1px;
+    border: solid 1px #fff;
+    left: 21px;
+    @include transform(skewX(-10deg));
+    @include animation(enterField 1s ease-out 1);
+
+
+    &:before {
+        width: 250px;
+        background: $sky;
+        height: 100%;
+        right: -206px;
+        bottom: 0px;
+        border-left: solid 1px #fff;
+        border-top: solid 1px $sky;
+        @include transform(skewX(20deg));
+    }
+
+    &:after {
+        width: 20px;
+        height: 82%;
+        bottom: 0;
+        right: 66px;
+        @include transform(skewX(20deg));
+        border-right: solid 2px #fff;
+    };
+}
+
+.field-int {
+    top: 35px;
+    border: solid 2px #fff;
+    border-top: none;
+    left: 85px;
+    width: 75%;
+    position: absolute;
+    height: 100px;
+    @extend %cf;
+
+    &:nth-of-type(2){
+
+        &:before {
+            border-left: solid 4px #fff;
+        }
+
+        border:solid 4px #fff;
+        box-shadow: 0 94px 0 $green;
+        border-top:none;
+        top:10px;
+        @include transform(scale(0.5));
+    }
+
+    &:nth-of-type(3) {
+        @include transform(scale(-0.4) skewX(13deg));
+        border: solid 13px rgb(255, 255, 255);
+        border-top: none;
+        height: 77px;
+        top: -18px;
+        left: 222px;
+        width: 41%;
+
+        &:before {
+            display:none;
+        }
+    }
+
+    &:nth-of-type(2), &:nth-of-type(3){
+        &:after {
+            display:none;
+        }
+    }
+
+
+    &:before {
+        width: 40px;
+        height: 100%;
+        @include transform(skewX(20deg));
+        right: -24px;
+        background: $green;
+        border-left: solid 2px #fff;
+        top: 2px;
+    }
+
+    &:after {
+        border-bottom: solid 2px #fff;
+        width: 231px;
+        height: 168px;
+        left: 232px;
+        top: -23px;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+}
+
+.ball-mark {
+    width: 20px;
+    height: 16px;
+    background: #fff;
+    border-radius: 100%;
+    top: 103px;
+    position: absolute;
+    left: 47%;
+}
+
+#instructions:checked ~ #welcome-soccer article {
+    opacity: 1;
+    visibility: visible;
+}

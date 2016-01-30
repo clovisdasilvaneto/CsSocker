@@ -1,0 +1,73 @@
+.logo {
+    position: relative;
+    text-align: center;
+    color: rgb(227, 247, 53);
+    font-family: "ARCENA-Regular";
+    margin-bottom: 0;
+    text-shadow: -3px 0 0 #FFF,3px 0 0 #FFF,0px 3px 0 #FFF,0 -3px 0 #FFF;
+
+    span {
+        font-family: "Lato";
+	    text-shadow: none;
+	    font-weight: 300;
+	    color: #fff;
+	    position: absolute;
+	    right: 231px;
+	    font-size: 22px;
+	    top: 0;
+
+	    i {
+	        width: 14px;
+		    display: inline-block;
+		    margin: 0 8px;
+		    height: 22px;
+		    background: #FF0000;
+		    border-radius: 20px 20px 0 0;
+		    @include transform(rotateZ(-49deg) translateY(-1px) translateX(-4px));
+
+		    &:before {
+		    	content:"";
+		        width: 14px;
+			    height: 22px;
+				background: #FF0000;
+				display:block;
+		   		border-radius: 20px 20px 0 0;
+				@include transform(rotateZ(90deg) translateY(-4px) translateX(4px));
+		    }
+	    }
+    }
+}
+
+.lvl {
+    position: relative;
+    text-align: center;
+    color: #ff4200;
+    font-family: "ARCENA-Regular";
+    margin-bottom: 0;
+    text-shadow: -3px 0 0 #FFF,3px 0 0 #FFF,0px 3px 0 #FFF,0 -3px 0 #FFF;
+
+    span {
+    	text-shadow:0 2px 0px rgba(0, 0, 0, 0.25);
+    	color:#fff;
+    }
+}
+
+.goal {
+    position: relative;
+    text-align: center;
+    color: transparent;
+    font-family: "ARCENA-Regular";
+    margin-bottom: 0;
+    -webkit-transition:all ease-out 1s, opacity 0.1s linear, visibility 0.1s linear;
+    -moz-transition:all ease-out 1s, opacity 0.1s linear, visibility 0.1s linear;
+    -ms-transition:all ease-out 1s, opacity 0.1s linear, visibility 0.1s linear;
+    -o-transition:all ease-out 1s, opacity 0.1s linear, visibility 0.1s linear;
+    transition:all ease-out 1s, opacity 0.1s linear, visibility 0.1s linear;
+    text-shadow:0 0 1103px #fff;
+    font-size: 120px;
+    z-index: 222;
+    opacity:0;
+    visibility:hidden;
+	@include transitionDelay(1s);
+    @include transform(scale(5));
+}
