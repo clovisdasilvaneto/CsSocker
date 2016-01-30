@@ -94,3 +94,16 @@ footer {
         top:40px;
     }
 }
+
+.social-media-inner ul,  .social-media-inner li {
+    list-style: none;
+}
+
+.social-media-inner ul {
+    text-align: center;
+}
+
+.social-media-inner li {
+    display: inline-block;
+    margin-right: 0;
+}
