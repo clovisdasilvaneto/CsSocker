@@ -1,13 +1,13 @@
 {
-  "name": "css-tricks",
+  "name": "CsSocker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Um jogo feito apenas com CSS. Descubra as mágicas que o css é capaz de fazer :)",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Clóvis Neto",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.0",
