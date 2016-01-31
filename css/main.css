@@ -31,7 +31,12 @@ section {
   margin-left: -425px;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 0 2px 2px #19AD1D, 0 0 5px 12px #fff; }
+  box-shadow: 0 0 2px 2px #19AD1D, 0 0 5px 12px #fff;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9); }
 
 p {
   color: #fff;
