@@ -1,4 +1,4 @@
-
+@import "../defaults/functions";
 
 body {
     background:#00DFFF;
@@ -28,7 +28,8 @@ section {
     margin-left:-425px;
     overflow: hidden;
     z-index:1;
-    box-shadow:0 0 2px 2px #19AD1D, 0 0 5px 12px #fff
+    box-shadow:0 0 2px 2px #19AD1D, 0 0 5px 12px #fff; 
+    @include transform(scale(0.9));
 }
 
 p {
@@ -93,4 +94,17 @@ footer {
         right:20px;
         top:40px;
     }
+}
+
+.social-media-inner ul,  .social-media-inner li {
+    list-style: none;
+}
+
+.social-media-inner ul {
+    text-align: center;
+}
+
+.social-media-inner li {
+    display: inline-block;
+    margin-right: 0;
 }
